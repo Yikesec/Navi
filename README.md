@@ -2,80 +2,45 @@
 
 # Project Navi ZSH Configuration
 
-This README describes the custom Zsh shell configuration for a project titled "Navi". This configuration includes custom functions, aliases, and an ASCII art banner, offering a unique and personalized terminal experience. Follow the instructions below to implement this configuration in your own Zsh shell.
+Hajimemashite, digital nomads of the Linux realms! ╰(°▽°)╯ Are you ready to embark on a quest to clone and configure the legendary "Navi" Zsh setup? With an ASCII art banner and profound quotes from Lain, your terminal is about to transcend into a world of wonder.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Zsh shell installed and set as your default shell. If you have not done this yet, you can use the following commands:
+On both Arch and Ubuntu, first ensure you're initiated in the ways of Zsh and the spells listed previously.
+
+### Cloning the Repository
+
+1. **Clone the repository** to retrieve the artifacts of power:
 
     ```bash
-    sudo apt-get update && sudo apt-get install zsh
-    chsh -s $(which zsh)
+    git clone https://github.com/Yikesec/Navi/
+    cd Navi
     ```
 
-- `oh-my-zsh` for managing your Zsh configuration. Install it with:
+2. **Bask in the presence of the sacred texts**:
 
-    ```bash
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
-
-- `exa`, a modern replacement for `ls`. Install using:
-
-    ```bash
-    sudo apt-get install exa
-    ```
-
-- `toilet` for ASCII art text. Install it using:
-
-    ```bash
-    sudo apt-get install toilet
-    ```
-
-- `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins. Install them with:
-
-    ```bash
-    sudo apt-get install zsh-autosuggestions zsh-syntax-highlighting
-    ```
-
-- `curl` for making API requests. Install it using:
-
-    ```bash
-    sudo apt-get install curl
-    ```
+    - `lain_quotes.txt`: A compendium of wisdom to adorn your terminal.
+    - `zsh.zshrc`: The core script that will transform your Zsh into a window of enlightenment.
 
 ### Installation Steps
 
-1. **Backup your existing Zsh configuration** (if any):
+Now, let's cast the installation enchantment:
+
+1. **Channel the essence of `lain_quotes.txt` into your sanctuary** (home directory):
 
     ```bash
-    mv ~/.zshrc ~/.zshrc.backup
+    cp lain_quotes.txt ~/
     ```
 
-2. **Copy the provided code** into your `~/.zshrc`:
-
-    Create or open your Zsh configuration file with a text editor:
+2. **Transmute your Zsh with the power of `zsh.zshrc`**:
 
     ```bash
-    nano ~/.zshrc
+    cp zsh.zshrc ~/.zshrc
     ```
-   
-    Copy and paste the provided Zsh code snippet into the file, and save it.
 
-3. **Create a `lain_quotes.txt` File:**
-
-    You should create a `lain_quotes.txt` in your home directory to store quotes for the `display_random_lain_quote` function to use:
-
-    ```bash
-    nano ~/lain_quotes.txt
-    ```
-   
-    Add your favorite quotes line by line.
-
-4. **Apply Changes:**
-
-    To apply the new configuration, either restart your terminal or apply the changes with:
+3. **Invoke the spirits of the new configuration**:
 
     ```bash
     source ~/.zshrc
@@ -83,40 +48,22 @@ This README describes the custom Zsh shell configuration for a project titled "N
 
 ## 🔍 Overview of Custom Functions and Aliases
 
-### Functions
-
-- **display_uptime:** Displays the system uptime in seconds with ASCII art.
-- **display_kernel:** Displays kernel information with ASCII art.
-- **cd:** Change directories and list the content after changing.
-- **count_files_and_dirs:** Display the count of files and directories in the current directory.
-- **parse_git_branch:** Parses the current Git branch.
-- **extract:** Extracts compressed files (supports multiple formats).
-- **weather:** Fetches and displays weather information for the specified (or default) city.
-  
-### Aliases
-
-- **l, ls, l., la, ll, ll., cp, ln, mv, rm:** Various aliases mainly for file navigation and manipulation.
-
-### Banner and Prompt Customizations
-
-- **generate_banner:** Generates an ASCII art banner upon terminal startup.
-- **display_random_lain_quote:** Displays a random quote from "lain_quotes.txt".
-- **Custom Prompt:** A uniquely styled and colored command prompt.
+With these sacred scripts, you'll command the terminal with unparalleled elegance and wisdom.
 
 ## 💻 Usage
 
-With the new Zsh configuration, your terminal should now display a custom ASCII art banner and quote upon startup, along with a stylish command prompt. Utilize the custom functions and aliases for an enhanced terminal experience.
+Behold! Your terminal now greets you with a banner of ASCII art and imparts the wisdom of Lain with every new session. Revel in the new-found power at your fingertips.
 
 ## 📜 License
 
-This project is open source. Feel free to modify and distribute your version, crediting the original creator if possible.
+This arcane knowledge is open-sourced. Spread the wisdom and customize it as your heart desires.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Start by forking the project, create a new branch for your features, and make sure to add/test your changes before submitting a pull request.
+To walk this path with us, simply fork the repository, concoct your own magical scripts, and present them to the council via a pull request.
 
 ---
 
-**Note:** Ensure to adapt instructions for the particular operating system and package manager you're using. The instructions above are crafted for Debian-based systems using `apt` package manager.
+**Note:** Whether you're from the House of Arch or the Ubuntu Clan, adapt these instructions to suit your environment. The repository contains all you need for both domains.
 
-With this README, users should be able to set up the provided Zsh configuration easily and understand the functionalities it offers.
+Embrace your new power with care, and may the command line be your canvas! (✧∀✧)
