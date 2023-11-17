@@ -1,11 +1,10 @@
+
+
 ### README.md for Tomoko's ZSH Configuration
 
 # Tomoko's ZSH Configuration - The World of Terminal Awesomeness (¬‿¬)
 
 Hello there, fellow terminal adventurers! (｡♥‿♥｡) Are you ready to join me on an exciting journey to clone and configure my legendary Zsh setup? With an ASCII art banner and some wisdom from Lain, your terminal is about to transform into a world of wonder.
-
-
-
 
 ## 🚀 Getting Started
 
@@ -87,7 +86,12 @@ Sometimes, you may encounter issues related to Zsh plugins, such as "no such fil
 
    ```bash
    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+   ```
+
+   If you're facing an issue with "zsh-syntax-highlighting," you can use the following command to install it on Arch:
+
+   ```bash
+   sudo pacman -S zsh-syntax-highlighting
    ```
 
 3. **Restart Zsh**:
