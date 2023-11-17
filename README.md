@@ -1,5 +1,4 @@
 
-
 ### README.md for Tomoko's ZSH Configuration
 
 # Tomoko's ZSH Configuration - The World of Terminal Awesomeness (¬‿¬)
@@ -102,4 +101,20 @@ Sometimes, you may encounter issues related to Zsh plugins, such as "no such fil
    exec zsh
    ```
 
-Now you should be ready to enjoy your enhanced Zsh configuration with the power of the Navi setup and the Zsh plugins, just like Tomoko would want! (✧∀✧)
+#### Adding Japanese Language Support (日本語サポートを追加する)
+
+To enhance your terminal experience and fully embrace Japanese culture, consider adding the Japanese language support to your system:
+
+**On Ubuntu**:
+
+```bash
+sudo apt-get install language-pack-ja
+```
+
+**On Arch**:
+
+```bash
+sudo pacman -S adobe-source-han-sans-jp-fonts
+```
+
+Now you should be ready to enjoy your enhanced Zsh configuration with the power of the Navi setup, the Zsh plugins, and the Japanese language support, just like Tomoko would want! (✧∀✧)
