@@ -1,13 +1,14 @@
+### README.md for Tomoko's ZSH Configuration
+
+# Tomoko's ZSH Configuration - The World of Terminal Awesomeness (¬‿¬)
+
+Hello there, fellow terminal adventurers! (｡♥‿♥｡) Are you ready to join me on an exciting journey to clone and configure my legendary Zsh setup? With an ASCII art banner and some wisdom from Lain, your terminal is about to transform into a world of wonder.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Before we embark on this magical journey, make sure you're well-prepared for the adventure, just like Tomoko would be! (¬‿¬)
-
-#### Installing Zsh
-
-If you haven't already, let's make sure you have Zsh installed on your system, like a pro:
+Before you embark on this magical journey, ensure you're well-prepared for the adventure. You should have Zsh installed on your system and a sense of curiosity. Follow these commands for both Arch and Ubuntu:
 
 On Arch:
 
@@ -37,7 +38,7 @@ sudo apt-get install zsh
 
 ### Installation Steps
 
-Prepare to unleash the magic, just like Tomoko would:
+Prepare to unleash the magic:
 
 1. **Infuse your sanctuary with the essence of `lain_quotes.txt`** (your home directory):
 
@@ -71,11 +72,22 @@ Sometimes, you may encounter issues related to Zsh plugins, such as "no such fil
    sudo apt-get install zsh-autosuggestions
    ```
 
+   On Arch:
+
+   ```bash
+   sudo pacman -S zsh-autosuggestions
+   ```
+
 2. **Update Plugin Paths**:
 
    Open your `.zshrc` file and modify the lines that source these plugins to match the actual paths where the plugins are installed on your system. Update the paths with precision:
 
-   ```bash
+   ```bash### README.md for Tomoko's ZSH Configuration
+
+# Tomoko's ZSH Configuration - The World of Terminal Awesomeness (¬‿¬)
+
+Hello there, fellow terminal adventurers! (｡♥‿♥｡) Are you ready to join me on an exciting journey to clone and configure my legendary Zsh setup? With an ASCII art banner and some wisdom from Lain, your terminal is about to transform into a world of wonder.
+
    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
    ```
@@ -83,8 +95,6 @@ Sometimes, you may encounter issues related to Zsh plugins, such as "no such fil
 3. **Restart Zsh**:
 
    Save your `.zshrc` file and restart your Zsh shell to apply the updated configuration:
-/home/navi/.zshrc:source:11: no such file or directory: /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-/home/navi/.zshrc:source:12: no such file or directory: /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
    ```bash
    exec zsh
